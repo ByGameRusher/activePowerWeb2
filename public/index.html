@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ActivePower</title>
+		<!-- custom css -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<!-- custom dark css -->
+		<link rel="stylesheet" href="./css/styleDark.css" />
+		<!-- custom responsivo css -->
+		<link rel="stylesheet" href="./css/responsivo.css" />
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/8ce167175a.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- open sans font google -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Materialize.css -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+		/>
+		<link rel="shortcut icon" href="icons/logoMini.svg" type="image/x-icon" />
+	</head>
+
+	<body id="body" class="transicion">
+		<!-- menu -->
+		<header>
+			<ol class="menu-list">
+				<li class="menu-item">
+					<b><a href="#home">INICIO</a></b>
+				</li>
+				<li class="menu-item">
+					<b><a href="#about">QUIENES SOMOS</a></b>
+				</li>
+				<li class="menu-item">
+					<b><a href="#contactanos">CONTACTANOS</a></b>
+				</li>
+			</ol>
+		</header>
+		<header class="hamburgesa" id="hamburgesa">
+			<!--icono-->
+			<i class="fas fa-bars"></i>
+			<div id="div-burger">
+				<!--lista-->
+				<ol>
+					<li>
+						<i class="fas fa-home"></i>
+						<b><a href="#home">INICIO</a></b>
+					</li>
+					<li>
+						<i class="fas fa-user"></i>
+						<b><a href="#about">QUIENES SOMOS</a></b>
+					</li>
+					<li>
+						<i class="fas fa-id-card"></i>
+						<b><a href="#contactanosanos">CONTACTANOS</a></b>
+					</li>
+				</ol>
+			</div>
+		</header>
+		<!-- parte superior y boton de descarga-->
+		<div class="contenedor">
+			<!-- home -->
+			<div id="home">
+				<div class="caja-padre">
+					<div class="caja">
+						<img class="img" src="descarga.png" alt="img de fondo" />
+						<div class="divIcono">
+							<center>
+								<img class="icono" src="icons/logoMini.svg" alt="Active Power" />
+								<p class="titulo">Active Power</p>
+							</center>
+							<p class="descarga">
+								<a href="apk/ActivePower.apk" download="ActivePower.apk">DESCARGA</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- about -->
+			<div id="about">
+				<h1>¿QUIENES SOMOS?</h1>
+				<div class="rejilla">
+					<div class="acerca-de">
+						<p>
+							Somos un grupo de estudiantes del sena, que estamos realizando estas
+							aplicaciones para sacar el tecnologo en adsi (analisis y diseño de sistemas
+							de la informacion)
+						</p>
+						<p>
+							nuestras cualidades son: comprometidos con el estudio y el trabajo, somos
+							personas creativas, dispuestas a aprender, nos gusta trabajar en equipo,
+							nuestro ambiente es muy agradable para todas las personas
+						</p>
+					</div>
+					<div class="acerca-de">
+						<p>Habilidades son</p>
+						<li>Creativos</li>
+						<li>Capacidad de solucionar problemas</li>
+						<li>Conocimientos tecnicos de JavaScript, HTML, CSS</li>
+						<li>Conocimientos tecnicos en React Native y React JS</li>
+					</div>
+				</div>
+
+				<!-- carousel show-->
+				<div class="carousel">
+					<div class="carousel-item">
+						<a class="link" href="https://github.com/THEGLUM">
+							<h6 class="nombre"><b>Santiago Ceballos Deossa</b></h6>
+							<img src="img/santiago.jpg" alt="" />
+						</a>
+					</div>
+
+					<div class="carousel-item">
+						<a class="link" href="https://github.com/ByGameRusher">
+							<h6 class="nombre"><b>Cristian Echeverri Gallego</b></h6>
+							<img src="img/cristian.jpg" alt="" />
+						</a>
+					</div>
+
+					<div class="carousel-item">
+						<a class="link" href="https://github.com/daniel395-stack">
+							<h6 class="nombre"><b>Daniel Stiven Agudelo</b></h6>
+							<img src="img/daniel.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- contact-->
+			<div id="contactanos">
+				<h1>CONTACTANOS</h1>
+				<div class="cartas">
+					<div class="carta">
+						<h3>¿Donde nos encontramos?</h3>
+						<!--aca va la cosa de google maps-->
+						<p>
+							<i class="fas fa-map-marker black-text"></i
+							><a href="https://www.sena.edu.co/" class="local"
+								>Centro de manofactura del cuero</a
+							>
+						</p>
+					</div>
+					<div class="carta">
+						<h3>Nuetras redes sociales</h3>
+						<p>
+							<i class="fab fa-facebook-f black-text"></i
+							><a href="https://www.facebook.com/Active-power-102464944802525"
+								>Facebook</a
+							>
+						</p>
+						<p>
+							<i class="fab fa-twitter black-text"></i
+							><a href="https://twitter.com/activepower7">Twitter</a>
+						</p>
+						<p>
+							<i class="fab fa-instagram"></i
+							><a href="https://www.instagram.com/acti.ve_power/">Instagram</a>
+						</p>
+					</div>
+
+					<div class="carta" id="numeros"></div>
+				</div>
+				<div class="back"></div>
+			</div>
+
+			<!-- btn change them-->
+			<div class="boton">
+				<a id="btn-theme" class="btn-floating btn-large waves-effect waves-light red">
+					<i class="fas fa-sun"></i>
+				</a>
+			</div>
+			<!--btn para generar el reporte-->
+			<div class="boton2">
+				<a id="btn-file" class="btn-floating btn-large waves-effect waves-light blue">
+					<i class="fas fa-file-pdf"></i>
+				</a>
+			</div>
+		</div>
+
+		<!-- Materialize.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+		<!-- FIREBASE -->
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+     		https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: 'AIzaSyA8gCbfrOtAdutm8smmopWCSJWr9mrhoW8',
+				authDomain: 'active-power.firebaseapp.com',
+				projectId: 'active-power',
+				storageBucket: 'active-power.appspot.com',
+				messagingSenderId: '982396867130',
+				appId: '1:982396867130:web:aaa345a7f0f4992d1c9b03',
+				measurementId: 'G-HW22E8M015',
+			}
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig)
+		</script>
+
+		<!-- custom js -->
+		<script src="main.js"></script>
+		<!--jsPDF-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js" integrity="sha512-1g3IT1FdbHZKcBVZzlk4a4m5zLRuBjMFMxub1FeIRvR+rhfqHFld9VFXXBYe66ldBWf+syHHxoZEbZyunH6Idg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	</body>
+</html>
