@@ -1,0 +1,17 @@
+body {
+	padding: 20px 20px 0 20px;
+}
+
+.logo {
+	display: block;
+	margin-bottom: 5%;
+}
+
+.active {
+	color: #ff5733;
+	font-family: 'Anton', sans-serif;
+}
+
+b {
+	color: #ff5733;
+}

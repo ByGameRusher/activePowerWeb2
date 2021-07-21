@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="reporte"></div>
-</body>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Reporte</title>
+		<link rel="stylesheet" href="./css/reporte.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div id="capture" >
+			<div class="logo">
+				<h1 class="text-center color"><b>A</b>ctive <b>P</b>ower</h1>
+			</div>
+			<div class="horas">
+				<h2>fecha y hora del reporte</h2>
+				<h4 id="hora"></h4>
+			</div>
+			<div>
+				<br />
+				<!--tabla de mensajes-->
+				<table class="table table-borderless table-striped caption-top ">
+					<caption>tabla de mensajes</caption>
+					<thead class="table-warning">
+						<tr>
+							<th>ID</th>
+							<th>Mensaje</th>
+						</tr>
+					</thead>
+					<tbody id="reporte-mensajes"></tbody>
+				</table>
+				<br />
+				<br />
+				<!--tabla de rutinas-->
+				<table class="table table-striped table-borderless caption-top ">
+					<caption>tabla de rutinas</caption>
+					<thead>
+						<tr class="table-warning">
+							<th>ID</th>
+							<th>Nombre</th>
+							<th>Descripcion</th>
+						</tr>
+					</thead>
+					<tbody id="reporte-rutina"></tbody>
+				</table>
+
+				<img src="" alt="" />
+			</div>
+		</div>
+		<!--html2-->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"
+			integrity="sha512-jzL0FvPiDtXef2o2XZJWgaEpVAihqquZT/tT89qCVaxVuHwJ/1DFcJ+8TBMXplSJXE8gLbVAUv+Lj20qHpGx+A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
+			integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<!--jsPDF-->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"
+			integrity="sha512-1g3IT1FdbHZKcBVZzlk4a4m5zLRuBjMFMxub1FeIRvR+rhfqHFld9VFXXBYe66ldBWf+syHHxoZEbZyunH6Idg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<!-- FIREBASE -->
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+     		https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-functions.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: 'AIzaSyA8gCbfrOtAdutm8smmopWCSJWr9mrhoW8',
+				authDomain: 'active-power.firebaseapp.com',
+				projectId: 'active-power',
+				storageBucket: 'active-power.appspot.com',
+				messagingSenderId: '982396867130',
+				appId: '1:982396867130:web:aaa345a7f0f4992d1c9b03',
+				measurementId: 'G-HW22E8M015',
+			}
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig)
+			const auth = firebase.auth()
+		</script>
+		<script src="reporte.js"></script>
+	</body>
 </html>

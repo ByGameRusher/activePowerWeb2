@@ -1,5 +1,3 @@
-const db = firebase.firestore()
-
 //carousel show automatico
 const carrusle = num => {
 	const e = document.querySelectorAll('.carousel')
@@ -116,13 +114,5 @@ window.addEventListener('orientationchange', resolucion)
 //reporte
 const btnFile = document.getElementById('btn-file')
 btnFile.addEventListener('click', () => {
-	var pdf = new jsPDF()
-	db.collection('mensaje').onSnapshot(query => {
-		query.docs.forEach(doc => {
-			const datos = doc.data()
-			pdf.text(datos.msg, 14, 16)
-		})
-		pdf.text('soy un holita!!!', 12, 12)
-		pdf.save('oe.pdf')
-	})
+	window.location = 'reporte.html'
 })
